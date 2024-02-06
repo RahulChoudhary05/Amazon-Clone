@@ -376,3 +376,80 @@ ul h3{
 .foot-copyright{
     padding-top: 4px;
 }
+
+
+/* Default styles */
+
+/* Add your default styles here */
+
+/* Media query for phones */
+@media screen and (max-width: 768px) {
+    /* Adjust navbar for phones */
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    /* Adjust hero-section for phones */
+    .hero-section {
+        height: 250px; /* Decrease height for phones */
+    }
+    /* Adjust shop-section for phones */
+    .shop-section .box {
+        width: 100%; /* Make image boxes full width for phones */
+    }
+}
+
+/* Media query for tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Adjust shop-section for tablets */
+    .shop-section .box {
+        width: 50%; /* Make image boxes half width for tablets */
+    }
+}
+
+/* Media query for laptops/desktops */
+@media screen and (min-width: 1024px) {
+    /* Adjust shop-section for laptops/desktops */
+    .shop-section .box {
+        width: 25%; /* Make image boxes quarter width for laptops/desktops */
+    }
+}
+
+/* Media query for footer on phones */
+@media screen and (max-width: 768px) {
+    /* Adjust footer panels for phones */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .foot-panel {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Media query for footer on tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Adjust footer panels for tablets */
+    .footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .foot-panel {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Media query for footer on laptops/desktops */
+@media screen and (min-width: 1024px) {
+    /* Adjust footer panels for laptops/desktops */
+    .footer {
+        justify-content: space-between;
+    }
+    .foot-panel {
+        width: 25%;
+        margin-bottom: 0;
+    }
+}
